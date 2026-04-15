@@ -119,11 +119,6 @@ function showMessage(message) {
   // jQuery METHOD #2: .fadeTo()
   // Fades message slightly after appearing
   msg.fadeTo(2000, 0);
-
-  // Remove after 2 seconds so it doesn't stack forever
-  setTimeout(function() {
-    msg.remove();
-  }, 2000);
 }
 
 
