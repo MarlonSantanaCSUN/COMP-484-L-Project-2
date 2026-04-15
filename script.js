@@ -114,7 +114,7 @@ function showMessage(message) {
   // Adds message to the bottom of container
   $('.message-container').prepend(`<div class="pet-message">${message}</div>`);
 
-  let msg = $('.pet-message').first();
+  var msg = $('.pet-message').first();
 
   // jQuery METHOD #2: .fadeTo()
   // Fades message slightly after appearing
