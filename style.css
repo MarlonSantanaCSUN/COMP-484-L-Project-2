@@ -1,99 +1,108 @@
-
 * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: helvetica, arial, sans-serif;
-    margin: 25px;
-  }
-  
-  main {
-    display:block;
-    height:175px;
-  }
-  
-  header {
-    border-bottom: 1px solid black;
-  }
-  
-  h1 {
-    font-weight: bold;
-    color: #000;
-  }
-  
-  .bold {
-    font-weight: bold;
-  }
-  
-  p {
-    max-width: 600px;
-  }
-  
-  
-  li {
-    margin-bottom: 5px;
-  }
-  
-  footer {
-    padding-top: 25px;
-    border-top: 1px solid black;
-  }
-  
-  footer a {
-    float:left;
-    margin:5px;
-  }
-  
-  .pet-image {
-    height:250px;
-  }
-  
-  .dashboard div {
-    display:block;
-  }
-  
-  .pet-image-container {
-    float:left;
-    padding:10px;
-  }
-  
-  .dashboard {
-    float:left;
-    padding:20px;
-  }
-  
-  .button-container {
-    margin-top:20px;
-  }
-  
-  .button-container button {
-    width: 100px;
-      margin-right: 10px;
-      text-align: center;
-      display: inline-block;
-      float: left;
-    font-size:15px;
-    background-color: #1e2835;
-    border-color: #404853;
-    cursor:pointer;
-    background-image: linear-gradient(to bottom,rgba(246,246,246,.1)0%,rgba(30,40,53,0)66%);
-    color: #fafafa;
-  }
+  box-sizing: border-box;
+}
 
-  .pet-message {
-    background-color: #ffeaa7;
-    padding: 8px;
-    margin-bottom: 5px;
-    border-radius: 5px;
-    font-size: 14px;
-  }
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  background: linear-gradient(135deg, #74b9ff, #a29bfe);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  .message-container {
-    float: left;
-    margin-bottom: 50px;
-    width: 200px;
-  }
+/* Header */
+header {
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+  background: #2d3436;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
 
-  
-  
+h1 {
+  margin: 0;
+}
+
+/* Main layout */
+main {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+  align-items: flex-start;
+}
+
+/* Pet Card (left side) */
+.pet-image-container {
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.pet-image {
+  height: 250px;
+  border-radius: 15px;
+}
+
+/* Dashboard Card (right side) */
+.dashboard {
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  width: 300px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Stats */
+.dashboard div {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/* Buttons */
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.button-container button {
+  flex: 1 1 45%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.1s, box-shadow 0.1s;
+  color: white;
+}
+
+/* Pokémon-style button colors */
+.treat-button { background: #00b894; }
+.play-button { background: #0984e3; }
+.exercise-button { background: #d63031; }
+.sleep-button { background: #6c5ce7; }
+.switch-button { background: #fdcb6e; color: black; }
+
+.button-container button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+/* Messages (like battle text box) */
+.message-container {
+  margin-top: 15px;
+  height: 80px;
+  overflow: hidden;
+}
+
+.pet-message {
+  background: #ffeaa7;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  border: 2px solid #fdcb6e;
+}
