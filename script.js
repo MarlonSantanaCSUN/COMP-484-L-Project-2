@@ -17,15 +17,21 @@ $(function() {
       happiness: 50
     };
   
+    // Treat → +happiness +weight
     function clickedTreatButton() {
-      // Increase pet happiness
-      // Increase pet weight
+      pet_info.happiness += 5;
+      pet_info.weight += 2;
+
+      showMessage("Yum! That was tasty! 🦴");
       checkAndUpdatePetInfoInHtml();
     }
     
+    // Play → +happiness -weight
     function clickedPlayButton() {
-      // Increase pet happiness
-      // Decrease pet weight
+      pet_info.happiness += 8;
+      pet_info.weight -= 1;
+
+      showMessage("That was fun! 🎾");
       checkAndUpdatePetInfoInHtml();
     }
     
