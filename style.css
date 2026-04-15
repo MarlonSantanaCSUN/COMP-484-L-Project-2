@@ -88,3 +88,12 @@
     border-radius: 5px;
     font-size: 14px;
   }
+
+  .message-container {
+    float: left;
+    margin-bottom: 50px;
+    width: 200px;
+  }
+
+  
+  
