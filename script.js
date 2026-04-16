@@ -118,7 +118,7 @@ function showMessage(message) {
 
   // jQuery METHOD #2: .fadeTo()
   // Fades message slightly after appearing
-  msg.fadeTo(2000, 0);
+  msg.fadeTo(2000, 0.3);
 }
 
 
