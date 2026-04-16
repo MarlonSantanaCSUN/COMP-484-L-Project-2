@@ -52,6 +52,7 @@ main {
   padding: 20px;
   border-radius: 20px;
   width: 300px;
+  height: 400px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
@@ -95,7 +96,7 @@ main {
 /* Messages (like battle text box) */
 .message-container {
   margin-top: 15px;
-  height: 80px;
+  height: 100px;
   overflow: hidden;
 }
 
